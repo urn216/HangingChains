@@ -46,14 +46,14 @@ public class CubeBridge extends Model {
   }
 
   private static void boundingBox(Vector3[] dest, int offset, double x, double y, double z) {
-    dest[offset+0] = new Vector3(x-0.5, y-0.25, z-0.5);
-    dest[offset+1] = new Vector3(x-0.5, y-0.25, z+0.5);
-    dest[offset+2] = new Vector3(x+0.5, y-0.25, z-0.5);
-    dest[offset+3] = new Vector3(x+0.5, y-0.25, z+0.5);
-    dest[offset+4] = new Vector3(x-0.5, y+0.25, z-0.5);
-    dest[offset+5] = new Vector3(x-0.5, y+0.25, z+0.5);
-    dest[offset+6] = new Vector3(x+0.5, y+0.25, z-0.5);
-    dest[offset+7] = new Vector3(x+0.5, y+0.25, z+0.5);
+    dest[offset+0] = new Vector3(x-0.5, y-0.5, z-0.5);
+    dest[offset+1] = new Vector3(x-0.5, y-0.5, z+0.5);
+    dest[offset+2] = new Vector3(x+0.5, y-0.5, z-0.5);
+    dest[offset+3] = new Vector3(x+0.5, y-0.5, z+0.5);
+    dest[offset+4] = new Vector3(x-0.5, y    , z-0.5);
+    dest[offset+5] = new Vector3(x-0.5, y    , z+0.5);
+    dest[offset+6] = new Vector3(x+0.5, y    , z-0.5);
+    dest[offset+7] = new Vector3(x+0.5, y    , z+0.5);
   }
 
   private static Tri[] generateFaces(Vector3[] verts) {
